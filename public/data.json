@@ -1,0 +1,38 @@
+[
+    {
+      "picture": "https://example.com/bus1.jpg",
+      "name": "Red Double-Decker Bus",
+      "price": 19.99,
+      "ratings": 4.5,
+      "category": "Bus Toys"
+    },
+    {
+      "picture": "https://example.com/bus2.jpg",
+      "name": "City Tour Bus",
+      "price": 24.99,
+      "ratings": 4.2,
+      "category": "Bus Toys"
+    },
+    {
+      "picture": "https://example.com/bus3.jpg",
+      "name": "School Bus Playset",
+      "price": 29.99,
+      "ratings": 4.8,
+      "category": "Bus Toys"
+    },
+    {
+      "picture": "https://example.com/bus4.jpg",
+      "name": "Remote Control Bus",
+      "price": 39.99,
+      "ratings": 4.6,
+      "category": "Bus Toys"
+    },
+    {
+      "picture": "https://example.com/bus5.jpg",
+      "name": "Construction Site Bus",
+      "price": 16.99,
+      "ratings": 4.3,
+      "category": "Bus Toys"
+    }
+  ]
+  
