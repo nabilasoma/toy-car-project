@@ -1,4 +1,5 @@
-import Banner from "../shared/Banner";
+import { Outlet } from "react-router-dom";
+import Footer from "../shared/Footer";
 import Navbar from "../shared/Navbar";
 
 
@@ -6,7 +7,8 @@ const Main = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <Banner></Banner>
+            <Outlet></Outlet>
+            <Footer></Footer>
         </div>
     );
 };

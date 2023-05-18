@@ -2,7 +2,7 @@
 
 const Banner = () => {
     return (
-        <div className="carousel w-full mt-12">
+        <div className="carousel w-full mt-4">
             <div id="slide1" className="carousel-item relative w-full">
                 <img style={{ height: '400px' }} src='https://i.ibb.co/Pj4r4rF/banner1.jpg' className="w-full" />
                 <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white">

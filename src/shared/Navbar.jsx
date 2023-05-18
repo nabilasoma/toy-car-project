@@ -1,10 +1,24 @@
 import logo from '../assets/logo2-removebg.png'
 import logo1 from '../assets/logo-removebg.png'
-import user from '../assets/user.png'
+import { useContext, useState } from 'react';
+import { AuthContext } from '../authProvider/AuthProvider';
+import { Link } from 'react-router-dom';
+import user1 from '../assets/user.png'
 
 const Navbar = () => {
+    const { user, logOut } = useContext(AuthContext);
+
+
+    const handleLogout = () => {
+        logOut()
+            .then()
+            .catch(error => console.log(error));
+
+    }
+
+
     return (
-        <div className="navbar bg-base-100 h-32">
+        <div className="navbar bg-base-100 h-24">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -16,21 +30,28 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <a className="btn btn-ghost normal-case text-xl">
-                    <img className='' style={{width: '150px'}} src={logo} alt="" />
-                    <img style={{width:'80px'}} src={logo1} alt="" />
+                    <img className='' style={{ width: '100px' }} src={logo} alt="" />
+                    <img style={{ width: '80px' }} src={logo1} alt="" />
                 </a>
-                
+
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
-                    <li><a>Blog</a></li>
-                    <li><a>All Toys</a></li>
+                    <li><Link>Home</Link></li>
+                    <li><Link>Blog</Link></li>
+                    <li><Link>All Toys</Link></li>
+                    {
+                        user ? <>
+
+                            <Link><button onClick={handleLogout} className="btn btn-link">Logout</button></Link>
+                            <a><img style={{ width: '40px' }} src={user1} alt="" /></a>
+                        </> : <li><Link to='/login'>Login</Link></li>
+                    }
                 </ul>
             </div>
             <div className="navbar-end">
                 <a className="">
-                    <img style={{width: '40px'}} src={user} alt="" />
+
                 </a>
             </div>
         </div>
