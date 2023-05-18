@@ -1,8 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import AllToysCard from './AllToysCard';
+import { AuthContext } from '../authProvider/AuthProvider';
+import { Link } from 'react-router-dom';
 
 const AllToys = () => {
     const [allToys, setAllToys] = useState([]);
+    const { user } = useContext(AuthContext);
 
     useEffect(() => {
         fetch('http://localhost:5000/allToys')
@@ -13,6 +16,7 @@ const AllToys = () => {
 
     return (
         <div>
+
             <h3>this is all toys page: {allToys.length}</h3>
 
 
@@ -24,8 +28,10 @@ const AllToys = () => {
                             <th>Toy name</th>
                             <th>Sub-category</th>
                             <th>price</th>
-                            <th>available quantity</th>
+                            <th>Quantity</th>
                             <th>View Details</th>
+                        
+
                         </tr>
                     </thead>
                     <tbody>
