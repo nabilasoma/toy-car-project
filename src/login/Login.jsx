@@ -1,12 +1,17 @@
 import React, { useContext, useState } from 'react';
 import { AuthContext } from '../authProvider/AuthProvider';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import logo from '../assets/logo2-removebg.png'
+import { FaGooglePlusG } from 'react-icons/fa';
 
 const Login = () => {
 
     const [error, setError] = useState('');
-    const { signIn } = useContext(AuthContext);
+    const { signIn, googleSignIn } = useContext(AuthContext);
+    const location = useLocation();
+    const navigate = useNavigate();
+
+    const from = location.state?.from?.pathname || '/';
 
 
     const handleLogin = event => {
@@ -41,11 +46,22 @@ const Login = () => {
         if (password < 6) {
             setError('Password should be at least 6 characters')
         }
-        else{
+        else {
             setError('')
         }
 
 
+    }
+
+    const handleGoogleLogin = () => {
+        googleSignIn()
+        .then(result => {
+            const loggedUser  = result.user;
+            console.log(loggedUser)
+        })
+        .catch(error => {
+            console.log(error)
+        })
     }
 
 
@@ -71,7 +87,7 @@ const Login = () => {
                                 </label>
                                 <input type="email" name="email" placeholder="email" className="input input-bordered" required />
                             </div>
-                            
+
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Password</span>
@@ -87,6 +103,13 @@ const Login = () => {
                             </label>
                             <p className='text-red-700'>{error}</p>
                         </form>
+                        <div className="flex flex-col w-full border-opacity-50 text-center">
+                            
+                            <div className="divider">OR</div>
+                           <div className='text-center mx-auto'>
+                           <button onClick={handleGoogleLogin} className='text-4xl text-red-800'><FaGooglePlusG /></button>
+                           </div>
+                        </div>
                     </div>
                 </div>
             </div>

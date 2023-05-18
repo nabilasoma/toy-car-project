@@ -1,38 +1,151 @@
+
 [
-    {
-      "picture": "https://example.com/bus1.jpg",
-      "name": "Red Double-Decker Bus",
-      "price": 19.99,
-      "ratings": 4.5,
-      "category": "Bus Toys"
+  {
+    "picture": "https://i.ibb.co/JjVF4bn/img1.jpg",
+    "name": "Red Double-Decker Bus",
+    "price": 19.99,
+    "rating": 4.5,
+    "category": "Bus",
+    "subCategory": "Double-Decker",
+    "quantity": 10,
+    "seller_name": "Toy Store",
+     "seller_email": "toystore@example.com",
+    "description": "Experience the thrill of a classic red double-decker bus with this beautifully designed toy. Perfect for imaginative play and great for collectors."
+  },
+  {
+    "picture": "https://i.ibb.co/kBLwGCN/img2.jpg",
+    "name": "Monster Truck",
+    "price": 29.99,
+    "rating": 4.2,
+    "category": "Truck",
+    "subCategory": "Monster",
+    "quantity": 5,
+    "seller_name": "Truck World",
+      "seller_email": "truckworld@example.com",
+      "description": "Unleash the power of the monster truck! This rugged and powerful toy will conquer any obstacle in its way. Great for outdoor adventures and high-speed excitement."
+  },
+  {
+    "picture": "https://i.ibb.co/NZvWXWD/img3.jpg",
+    "name": "Sports Car",
+    "price": 39.99,
+    "rating": 4.8,
+    "category": "Car",
+    "subCategory": "Sports",
+    "quantity": 8,
+    "seller_name": "Speedy Toys",
+    "seller_email": "speedytoys@example.com",
+    "description": "Feel the adrenaline rush with this sleek sports car. Its aerodynamic design and powerful engine make it the perfect toy for racing enthusiasts. Get ready to speed away!"
+     },
+  {
+    "picture": "https://i.ibb.co/Z1VMg3h/img4.jpg",
+    "name": "Red Double-Decker Bus",
+    "price": 19.99,
+    "rating": 4.5,
+    "category": "Bus",
+    "subCategory": "Double-Decker",
+    "quantity": 10,
+    "seller_name": "Toy Store",
+      "seller_email": "toystore@example.com",
+      "description": "Experience the thrill of a classic red double-decker bus with this beautifully designed toy. Perfect for imaginative play and great for collectors."
     },
-    {
-      "picture": "https://example.com/bus2.jpg",
-      "name": "City Tour Bus",
-      "price": 24.99,
-      "ratings": 4.2,
-      "category": "Bus Toys"
+    
+  {
+    "picture": "https://i.ibb.co/wRHg3CB/img5.webp",
+    "name": "Monster Truck",
+    "price": 29.99,
+    "rating": 4.2,
+    "category": "Truck",
+    "subCategory": "Monster",
+    "quantity": 5,
+    "seller_name": "Truck World",
+      "seller_email": "truckworld@example.com",
+      "description": "Unleash the power of the monster truck! This rugged and powerful toy will conquer any obstacle in its way. Great for outdoor adventures and high-speed excitement."
     },
-    {
-      "picture": "https://example.com/bus3.jpg",
-      "name": "School Bus Playset",
-      "price": 29.99,
-      "ratings": 4.8,
-      "category": "Bus Toys"
+   
+  {
+    "picture": "https://i.ibb.co/L9VpMcW/img6.jpg",
+    "name": "Sports Car",
+    "price": 39.99,
+    "rating": 4.8,
+    "category": "Car",
+    "subCategory": "Sports",
+    "quantity": 8,
+    "seller_name": "Speedy Toys",
+    "seller_email": "speedytoys@example.com",
+    "description": "Feel the adrenaline rush with this sleek sports car. Its aerodynamic design and powerful engine make it the perfect toy for racing enthusiasts. Get ready to speed away!"
+  },
+  {
+    "picture": "https://i.ibb.co/p2npCVT/img7.jpg",
+    "name": "Yellow School Bus",
+    "price": 16.99,
+    "rating": 4.1,
+    "category": "Bus",
+    "subCategory": "School",
+    "quantity": 12,
+    "seller_name": "Back to School Toys",
+      "seller_email": "backtoschooltoys@example.com",
+    "description": "All aboard the yellow school bus! This toy captures the charm of a traditional school bus and provides endless fun for little ones. Great for pretend play and educational activities."
+  },
+  {
+    "picture": "https://i.ibb.co/TPtVxf7/img8.jpg",
+    "name": "Fire Truck",
+    "price": 24.99,
+    "rating": 4.6,
+    "category": "Truck",
+    "subCategory": "Fire",
+    "quantity": 3,
+      "seller_name": "Fire & Rescue Toys",
+      "seller_email": "firetoys@example.com",
+      "description": "Sound the alarm! This fire truck toy is equipped with all the essentials to fight pretend fires and save the day. Inspire young heroes with this realistic and engaging playset."
     },
-    {
-      "picture": "https://example.com/bus4.jpg",
-      "name": "Remote Control Bus",
-      "price": 39.99,
-      "ratings": 4.6,
-      "category": "Bus Toys"
-    },
-    {
-      "picture": "https://example.com/bus5.jpg",
-      "name": "Construction Site Bus",
-      "price": 16.99,
-      "ratings": 4.3,
-      "category": "Bus Toys"
-    }
-  ]
+    
+  {
+    "picture": "https://i.ibb.co/CJ0tGcD/img9.jpg",
+    "name": "Fire Truck",
+    "price": 24.99,
+    "rating": 4.6,
+    "category": "Truck",
+    "subCategory": "Fire",
+    "quantity": 3,
+      "seller_name": "Fire & Rescue Toys",
+      "seller_email": "firetoys@example.com",
+    "description": "Sound the alarm! This fire truck toy is equipped with all the essentials to fight pretend fires and save the day. Inspire young heroes with this realistic and engaging playset."
+  },
+  {
+    "picture": "https://i.ibb.co/G9qzcrz/img10.jpg",
+    "name": "Race Car Set",
+    "price": 49.99,
+    "rating": 4.9,
+    "category": "Car",
+    "subCategory": "Race",
+    "quantity": 2,
+      "seller_name": "Speedster Toys",
+      "seller_email": "speedstertoys@example.com",
+    "description": "Experience the excitement of racing with this thrilling race car set. Includes two high-speed cars and a customizable track for hours of competitive fun."
+  },
+  {
+    "picture": "https://i.ibb.co/27Wtm03/img11.jpg",
+    "name": "City Tour Bus",
+    "price": 22.99,
+    "rating": 4.3,
+    "category": "Bus",
+    "subCategory": "Tour",
+    "quantity": 7,
+      "seller_name": "City Adventures Toys",
+      "seller_email": "citytoys@example.com",
+    "description": "Take a tour around the city with this detailed and realistic city bus toy. Perfect for role-playing scenarios and exploring different places."
+  },
+  {
+    "picture": "https://i.ibb.co/sQjVB9D/img12.jpg",
+    "name": "Construction Truck Set",
+    "price": 39.99,
+    "rating": 4.4,
+    "category": "Truck",
+    "subCategory": "Construction",
+    "quantity": 4,
+      "seller_name": "Build It Toys",
+      "seller_email": "buildittoys@example.com",
+    "description": "Let your child's imagination run wild with this construction truck set. Includes various trucks and accessories to create a mini construction site."
+  }
   
+]
