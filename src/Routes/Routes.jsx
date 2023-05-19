@@ -9,7 +9,7 @@ import ViewDetails from "../viewDetails/ViewDetails";
 import PrivateRoute from "./PrivateRoute";
 import AddaToy from "../addAtoy/AddaToy";
 import MyToy from "../myToy/MyToy";
-import UpdateToy from "../updateToy/UpdateToy";
+import UpdateToy from "../updateToy/UpdateToy"
 
 
 const router = createBrowserRouter([

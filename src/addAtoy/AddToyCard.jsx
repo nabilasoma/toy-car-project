@@ -70,8 +70,9 @@ const AddToyCard = ({ addToy, setAddToys, addToys }) => {
             <td><small>{email}</small></td>
             <td><small>{sub}</small></td>
             <td><small>{price}</small></td>
-            <td><small>{description}</small></td>
             <Link to={`/update/${_id}`}><button className='btn btn-success font-bold text-white'>Update</button></Link>
+            {/* <td><small>{description}</small></td> */}
+            
             <th>
                 <button className="btn btn-ghost btn-xs"></button>
             </th>

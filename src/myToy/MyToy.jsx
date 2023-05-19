@@ -9,9 +9,9 @@ const MyToy = () => {
 
     return (
         <div>
-            <h3 className='text-red-800 font-bold'>Total Toys: {addToys.length}</h3>
-            <input className='border-2 p-2' type="search" name="search" id="" />
-            <button className='btn btn-primary'>Search</button>
+            <h3 className=''>Total Toys: {addToys.length}</h3>
+            {/* <input className='border-2 p-2' type="search" name="search" id="" />
+            <button className='btn btn-primary'>Search</button> */}
             <div className="overflow-x-auto w-full">
   <table className="table w-full">
     <thead>
@@ -27,8 +27,9 @@ const MyToy = () => {
         <th>Seller Email</th>
         <th>Sub Category</th>
         <th>Price</th>
-        <th>Description</th>
         <th>Update</th>
+        {/* <th>Description</th> */}
+       
       </tr>
     </thead>
     <tbody>
@@ -42,7 +43,7 @@ const MyToy = () => {
     </tbody>
   </table>
 </div>
-        </div>
+         </div>
     );
 };
 

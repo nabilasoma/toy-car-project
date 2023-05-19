@@ -3,6 +3,7 @@ import Banner from '../../shared/Banner';
 import { useLoaderData } from 'react-router-dom';
 import Gallery from '../../gallery/Gallery';
 import Category from '../../category/Category';
+import AOS from 'aos';
 
 const Home = () => {
     const myToys = useLoaderData();

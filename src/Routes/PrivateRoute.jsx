@@ -8,13 +8,13 @@ const PrivateRoute = ({children}) => {
     console.log(location);
 
     if(loading){
-        return <Spinner animation="border" variant="success" />
+        return <progress className="progress w-56" value="100" max="100"></progress>
     }
 
     if(user){
         return children
     }
-    return <Navigate state={{from: location}} to='/login' replace></Navigate>
+    return <Navigate state={{from: location}} to='/login' replace={true}></Navigate>
 }
       
 

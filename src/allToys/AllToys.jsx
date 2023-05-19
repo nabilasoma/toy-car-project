@@ -17,7 +17,7 @@ const AllToys = () => {
     return (
         <div>
 
-            <h3>this is all toys page: {allToys.length}</h3>
+            <h3 className='text-red-800 font-bold text-center'>Your ALl Toys Here: {allToys.length}</h3>
 
 
             <div className="overflow-x-auto mt-5">

@@ -1,9 +1,6 @@
-.tab{
-    padding: 30px;
-    text-align: center;
-    font-size: 15px;
-    border-radius: 10px;
-    margin-right: 4px;
-    font-weight: bold
-
+.content{
+    display: none;
+}
+.show-content{
+    display: block;
 }
