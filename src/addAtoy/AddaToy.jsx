@@ -14,13 +14,14 @@ const AddaToy = () => {
         const name = form.name.value;
         const photo = form.photo.value;
         const seller = form.seller.value;
-        const sub = form.seller.value;
-        const price = form.seller.value;
-        const quantity = form.seller.value;
+        const sub = form.sub.value;
+        const price = form.price.value;
+        const quantity = form.quantity.value;
         const email = form.email.value;
         const rating = form.rating.value;
+        const description = form.description.value;
         
-        const addNewToy = {name, photo, seller, sub, price, quantity, email, rating} 
+        const addNewToy = {description, name, photo, seller, sub, price, quantity, email, rating} 
         console.log(addNewToy);
 
         fetch('http://localhost:5000/addNew', {
