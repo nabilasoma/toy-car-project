@@ -37,14 +37,14 @@ const Navbar = () => {
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                    <li><Link>Home</Link></li>
-                    <li><Link to='/blog'>Blog</Link></li>
-                    <li><Link to='/allToys'>All Toys</Link></li>
+                    <li className='font-bold'><Link>Home</Link></li>
+                    <li className='font-bold'><Link to='/blog'>Blog</Link></li>
+                    <li className='font-bold'><Link to='/allToys'>All Toys</Link></li>
                     {
                         user ? <>
-                           <li><Link to='/addAToy'>Add A Toy</Link></li>
-                            <li><Link to='/myToy'>My Toy</Link></li>
-                            <Link><button onClick={handleLogout} className="btn btn-link">Logout</button></Link>
+                           <li className='font-bold'><Link to='/addAToy'>Add A Toy</Link></li>
+                            <li className='font-bold'><Link to='/myToy'>My Toy</Link></li>
+                            <Link className='font-bold'><button onClick={handleLogout} className="btn btn-link">Logout</button></Link>
                             <a><img style={{ width: '40px' }} src={user1} alt="" /></a>
                         </> : <li><Link to='/login'>Login</Link></li>
                     }
