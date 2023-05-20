@@ -29,7 +29,7 @@ const Category = () => {
             
 
             <div className={toggle === 1 ? "show-content" : "content"}>
-              <div className='flex gap-6'>
+              <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
               <div className="card mt-5 card-compact h-96 w-96 bg-base-100 mx-auto shadow-xl">
                     <figure><img src="https://i.ibb.co/L9VpMcW/img6.jpg" alt="Shoes" /></figure>
                     <div className="card-body">
@@ -63,7 +63,7 @@ const Category = () => {
               </div>
             </div>
             <div className={toggle === 2 ? "show-content" : "content"}>
-           <div className='flex gap-6'>
+           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
            <div className="mx-auto card mt-5 h-96 card-compact w-96 bg-base-100 shadow-xl">
                     <figure><img src="https://i.ibb.co/27Wtm03/img11.jpg" alt="Shoes" /></figure>
                     <div className="card-body">
@@ -97,7 +97,7 @@ const Category = () => {
             </div>
            </div>
             <div className={toggle === 3 ? "show-content" : "content"}>
-            <div className='flex gap-6'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
             <div className="mx-auto card mt-5 h-96 card-compact w-96 bg-base-100 shadow-xl">
                     <figure><img src="https://i.ibb.co/kBLwGCN/img2.jpg" alt="Shoes" /></figure>
                     <div className="card-body">

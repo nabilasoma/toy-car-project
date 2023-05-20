@@ -44,7 +44,7 @@ const Navbar = () => {
                         user ? <>
                            <li className='font-bold'><Link to='/addAToy'>Add A Toy</Link></li>
                             <li className='font-bold'><Link to='/myToy'>My Toy</Link></li>
-                            <Link className='font-bold'><button onClick={handleLogout} className="btn btn-link">Logout</button></Link>
+                            <li><Link className='font-bold'><button onClick={handleLogout} className="btn btn-success btn-sm">Logout</button></Link></li>
                             <a><img style={{ width: '40px' }} src={user1} alt="" /></a>
                         </> : <li><Link to='/login'>Login</Link></li>
                     }

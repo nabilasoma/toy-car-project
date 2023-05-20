@@ -19,7 +19,7 @@ const UpdateToy = () => {
         const description = form.description.value;
         
         
-        const updatedToy = {description, name, photo, seller, sub, price, quantity, email, rating} 
+        const updatedToy = {description,  price, quantity} 
         console.log(updatedToy);
 
         fetch(`https://toy-car-server-seven.vercel.app/addNew/${_id}`, {

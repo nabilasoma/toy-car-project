@@ -6,6 +6,7 @@ const SectionOne = () => {
 
     return (
         <div>
+            <hr />
             <h1 className='mb-4 text-4xl font-bold text-red-600 text-center mt-16'>About Our Toys</h1>
             <p className='mb-5 font-bold text-2xl text-gray-700'>Welcome to the Kids Toys Store!</p>
             <p style={{ width: '600px' }} className='text-center text-gray-500 font-bold mx-auto'>

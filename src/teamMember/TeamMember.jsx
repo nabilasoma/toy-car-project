@@ -10,7 +10,7 @@ const TeamMember = () => {
             <h3 className='text-red-600 font-bold text-3xl text-center mt-12 mb-8'>Meet Our Team Member !!</h3>
             <p style={{ width: '600px' }} className='font-bold mx-auto text-center text-gray-600 mt-5 mb-8'>As our visionary leader, John brings a wealth of experience and strategic direction to this Company. With a proven track record in the industry, he guides our company's overall strategy and ensures that we stay ahead in a rapidly evolving market. John's strong leadership inspires our team to push boundaries, innovate, and exceed customer expectations.</p>
             <div>
-                <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
                     <div className='' data-aos="flip-left"
                         data-aos-easing="ease-out-cubic"
                         data-aos-duration="2000">
@@ -59,7 +59,7 @@ const TeamMember = () => {
             </div>
             <div>
                 <div>
-                    <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4'>
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
                         <div className='' data-aos="flip-left"
                             data-aos-easing="ease-out-cubic"
                             data-aos-duration="2000">
