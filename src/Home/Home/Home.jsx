@@ -4,6 +4,7 @@ import { useLoaderData } from 'react-router-dom';
 import Gallery from '../../gallery/Gallery';
 import Category from '../../category/Category';
 import AOS from 'aos';
+import SectionOne from '../../sectionOne/SectionOne';
 
 const Home = () => {
     const myToys = useLoaderData();
@@ -20,6 +21,7 @@ const Home = () => {
             }
            </div>
             <Category></Category>
+            <SectionOne></SectionOne>
         </div>
     );
 };

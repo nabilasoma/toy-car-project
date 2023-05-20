@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from'../assets/logo2-removebg.png'
 
 const Footer = () => {
     return (
@@ -7,6 +8,11 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div className="col-span-1">
                         <h2 className="text-2xl font-bold mb-4">Toy Cars</h2>
+                        <img
+                            src={logo}
+                            alt="Toy Cars Logo"
+                            className="h-12 mb-4 mx-auto"
+                        />
                         <p className="text-gray-400">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         </p>
@@ -33,11 +39,6 @@ const Footer = () => {
                         </p>
                     </div>
                     <div className="col-span-1 flex flex-col items-center">
-                        <img
-                            src="https://example.com/logo.png"
-                            alt="Toy Cars Logo"
-                            className="h-12 mb-4"
-                        />
                         <div className="flex space-x-4">
                             <a href="#" className="text-gray-400 hover:text-white transition duration-300">
                                 <i className="fab fa-facebook"></i>
