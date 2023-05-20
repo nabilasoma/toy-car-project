@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from'../assets/logo2-removebg.png'
+import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
     return (
@@ -37,22 +38,14 @@ const Footer = () => {
                         <p className="text-gray-400">
                             (123) 456-7890
                         </p>
+                        <div className='flex ml-32 mb-8 text-red-600'>
+                    <p className='text-center'><FaFacebook /></p>
+                    <p  className='text-center'><FaTwitter/></p>
+                    <p  className='text-center'><FaInstagram/></p>
+                    </div>
                     </div>
                     <div className="col-span-1 flex flex-col items-center">
-                        <div className="flex space-x-4">
-                            <a href="#" className="text-gray-400 hover:text-white transition duration-300">
-                                <i className="fab fa-facebook"></i>
-                            </a>
-                            <a href="#" className="text-gray-400 hover:text-white transition duration-300">
-                                <i className="fab fa-twitter"></i>
-                            </a>
-                            <a href="#" className="text-gray-400 hover:text-white transition duration-300">
-                                <i className="fab fa-instagram"></i>
-                            </a>
-                            <a href="#" className="text-gray-400 hover:text-white transition duration-300">
-                                <i className="fab fa-youtube"></i>
-                            </a>
-                        </div>
+                   
                     </div>
                 </div>
             </div>

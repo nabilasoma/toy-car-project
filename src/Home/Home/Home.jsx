@@ -5,6 +5,7 @@ import Gallery from '../../gallery/Gallery';
 import Category from '../../category/Category';
 import AOS from 'aos';
 import SectionOne from '../../sectionOne/SectionOne';
+import TeamMember from '../../teamMember/TeamMember';
 
 const Home = () => {
     const myToys = useLoaderData();
@@ -22,6 +23,7 @@ const Home = () => {
            </div>
             <Category></Category>
             <SectionOne></SectionOne>
+            <TeamMember></TeamMember>
         </div>
     );
 };
