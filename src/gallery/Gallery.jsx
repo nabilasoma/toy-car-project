@@ -6,7 +6,8 @@ const Gallery = ({ myToy }) => {
     console.log('from gallery', myToy);
     AOS.init();
     return (
-        <div className="card card-compact w-96 bg-base-100 shadow-xl relative" data-aos="fade-up"
+      
+          <div className="card card-compact w-96 bg-base-100 shadow-xl relative" data-aos="fade-up"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="2000">
             <figure><img src={photo} alt="Shoes" /></figure>
@@ -19,10 +20,8 @@ const Gallery = ({ myToy }) => {
                     <button className="btn btn-block ">Buy Now</button>
                 </div>
             </div>
-
-
-
         </div>
+      
     );
 };
 
