@@ -19,7 +19,7 @@ const AddToyCard = ({ addToy, setAddToys, addToys }) => {
         }).then((result) => {
             if (result.isConfirmed) {
 
-                fetch(`http://localhost:5000/addNew/${_id}`, {
+                fetch(`https://toy-car-server-seven.vercel.app/addNew/${_id}`, {
                     method: 'DELETE'
 
                 })
