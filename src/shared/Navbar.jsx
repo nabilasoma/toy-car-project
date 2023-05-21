@@ -5,9 +5,10 @@ import { AuthContext } from '../authProvider/AuthProvider';
 import { Link } from 'react-router-dom';
 import user1 from '../assets/user.png'
 import ActiveLink from '../activeLink/ActiveLink';
+import { Tooltip } from 'react-tooltip'
 
 const Navbar = () => {
-    const { user, logOut } = useContext(AuthContext);
+    const { user, logOut, displayName } = useContext(AuthContext);
 
 
     const handleLogout = () => {
@@ -43,10 +44,16 @@ const Navbar = () => {
                     <li className='font-bold'><ActiveLink to='/allToys'>All Toys</ActiveLink></li>
                     {
                         user ? <>
-                           <li className='font-bold'><ActiveLink to='/addAToy'>Add A Toy</ActiveLink></li>
+                            <li className='font-bold'><ActiveLink to='/addAToy'>Add A Toy</ActiveLink></li>
                             <li className='font-bold'><ActiveLink to='/myToy'>My Toy</ActiveLink></li>
                             <li><ActiveLink className='font-bold'><button onClick={handleLogout} className="btn btn-success btn-sm">Logout</button></ActiveLink></li>
-                            <a><img style={{ width: '40px' }} src={user1} alt="" /></a>
+                            <a
+                                data-tooltip-id="my-tooltip"
+                                data-tooltip-content={displayName}
+                                data-tooltip-place="top"
+                            ><img style={{ width: '40px' }} src={user1} alt="" />
+                            </a>
+                            <Tooltip id="my-tooltip" />
                         </> : <li><ActiveLink to='/login'>Login</ActiveLink></li>
                     }
                 </ul>

@@ -74,7 +74,7 @@ const TeamMember = () => {
                         <div className='' data-aos="flip-left"
                             data-aos-easing="ease-out-cubic"
                             data-aos-duration="2000">
-                            <img className='border-3 rounded-full border-white mx-auto' style={{ width: '200px' }} src="https://i.ibb.co/N7JxCMq/team7.jpg" alt="" />
+                            <img className='border-3 rounded-full border-white mx-auto' style={{ width: '200px', height:'200px'}} src="https://i.ibb.co/N7JxCMq/team7.jpg" alt="" />
                             <p className='font-bold text-red-700 text-center'><small>Vice Chairman</small></p>
                             <div className='flex ml-32 mb-8 text-red-600'>
                                 <p className='text-center'><FaFacebookF /></p>
