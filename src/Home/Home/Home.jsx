@@ -8,6 +8,9 @@ import SectionOne from '../../sectionOne/SectionOne';
 import TeamMember from '../../teamMember/TeamMember';
 
 
+
+
+
 const Home = () => {
     const myToys = useLoaderData();
     console.log(myToys);

@@ -43,14 +43,16 @@ const Footer = () => {
                      
                     </div>
                     <div className="col-span-1 flex flex-col items-center">
-                        <h3 className='text-xl text-white text-center font-bold'>Social Contact</h3>
-                    <div className='flex mb-8 text-red-600 mt-3 mx-auto txt-center ml-20'>
-                    <p className='text-center mr-3 text-2xl'><FaFacebook /></p>
-                    <p  className='text-center mr-3 text-2xl'><FaTwitter/></p>
-                    <p  className='text-center mr-3 text-2xl'><FaInstagram/></p>
-                    <p  className='text-center mr-3 text-2xl'><FaDribbble/></p>
+                        <h3 className='text-xl text-white font-bold'>Social Contact</h3>
+                    <div className='flex gap-2 mt-3'>
+                    <p className=' text-2xl'><FaFacebook /></p>
+                    <p  className='text-2xl'><FaTwitter/></p>
+                    <p  className='text-2xl'><FaInstagram/></p>
+                    <p  className='text-2xl'><FaDribbble/></p>
                     
                     </div>
+                    
+                   
                    
                     </div>
                 </div>

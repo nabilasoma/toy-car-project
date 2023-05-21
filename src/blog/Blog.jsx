@@ -1,8 +1,13 @@
 import React from 'react';
+import {Helmet} from "react-helmet";
 
 const Blog = () => {
     return (
+       
         <div className='w-75'>
+             <Helmet>
+                <title>blog page</title>
+             </Helmet>
             <h3 className='text-green-600 mt-12 text-xl font-bold text-center mb-8'>Question No-1: What is an access token and refresh token? How do they work and where should we store them on the client-side?</h3>
             <h3 className='text-center'>Answer: An access token and a refresh token are commonly used in authentication and authorization systems. Here's an explanation of what they are, how they work, and where they should be stored on the client-side:<br />
 

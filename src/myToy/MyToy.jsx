@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import AddToyCard from '../addAtoy/AddToyCard';
+import {Helmet} from "react-helmet";
 
 const MyToy = () => {
 
@@ -9,6 +10,9 @@ const MyToy = () => {
 
     return (
         <div>
+           <Helmet>
+                <title>my toy page</title>
+             </Helmet>
             <h3 className=''>Total Toys: {addToys.length}</h3>
             {/* <input className='border-2 p-2' type="search" name="search" id="" />
             <button className='btn btn-primary'>Search</button> */}

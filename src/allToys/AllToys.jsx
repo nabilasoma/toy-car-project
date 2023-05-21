@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import AllToysCard from './AllToysCard';
 import { AuthContext } from '../authProvider/AuthProvider';
 import { Link } from 'react-router-dom';
+import {Helmet} from "react-helmet";
 
 const AllToys = () => {
     const [allToys, setAllToys] = useState([]);
@@ -15,8 +16,9 @@ const AllToys = () => {
 
 
     return (
+        
         <div>
-
+            
             <h3 className='text-red-800 font-bold text-center'>Your ALl Toys Here: {allToys.length}</h3>
 
 
