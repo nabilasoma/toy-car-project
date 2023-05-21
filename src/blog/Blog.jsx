@@ -76,27 +76,6 @@ Overall, Nest.js builds upon the features of Express.js while providing addition
 <h3 className='text-green-600 mt-12 text-xl font-bold text-center mb-8'>Question No-4: What is MongoDB aggregate and how does it work</h3>
 <h3 className='font-bold text-center text-red-500'>Answer:</h3>
 <p className='text-center'>Aggregation is a way of processing a large number of documents in a collection by means of passing them through different stages. The stages make up what is known as a pipeline. The stages in a pipeline can filter, sort, group, reshape and modify documents that pass through the pipeline. In MongoDB, the aggregate method is used to perform advanced data aggregation operations on collections. It allows you to process and transform data in a flexible and powerful way, combining multiple stages to produce the desired results. The aggregation framework in MongoDB provides a pipeline-based approach where documents flow through various stages to undergo different transformations and computations.</p>
-https://i.ibb.co/gyTHFXX/about1-removebg-preview.png
-https://i.ibb.co/FK7wLqQ/about4-removebg-preview.png
-https://i.ibb.co/9NwzT1J/about3-removebg-preview.png
-https://i.ibb.co/FK7wLqQ/about4-removebg-preview.png
-
-
-
-https://i.ibb.co/PtrL6CM/team1.jpg
-https://i.ibb.co/K6dPNW2/team2.jpg
-https://i.ibb.co/8gt8QBm/team4.jpg
-https://i.ibb.co/X7kSDM7/team3.jpg
-https://i.ibb.co/4mzLGff/team5.jpg
-https://i.ibb.co/Js4QgdT/team6.jpg
-https://i.ibb.co/N7JxCMq/team7.jpg
-https://i.ibb.co/mNHKQ1X/team8.jpg
-https://i.ibb.co/PCxBJB5/team9.jpg
-https://i.ibb.co/hBZpsWy/team10.jpg
-
-
-
-
 Regenerate response</p>
         </div>
     );
