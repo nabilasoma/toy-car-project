@@ -4,6 +4,7 @@ import { useContext, useState } from 'react';
 import { AuthContext } from '../authProvider/AuthProvider';
 import { Link } from 'react-router-dom';
 import user1 from '../assets/user.png'
+import ActiveLink from '../activeLink/ActiveLink';
 
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext);
@@ -37,16 +38,16 @@ const Navbar = () => {
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                    <li className='font-bold'><Link>Home</Link></li>
-                    <li className='font-bold'><Link to='/blog'>Blog</Link></li>
-                    <li className='font-bold'><Link to='/allToys'>All Toys</Link></li>
+                    <li className='font-bold'><ActiveLink to='/'>Home</ActiveLink></li>
+                    <li className='font-bold'><ActiveLink to='/blog'>Blog</ActiveLink></li>
+                    <li className='font-bold'><ActiveLink to='/allToys'>All Toys</ActiveLink></li>
                     {
                         user ? <>
-                           <li className='font-bold'><Link to='/addAToy'>Add A Toy</Link></li>
-                            <li className='font-bold'><Link to='/myToy'>My Toy</Link></li>
-                            <li><Link className='font-bold'><button onClick={handleLogout} className="btn btn-success btn-sm">Logout</button></Link></li>
+                           <li className='font-bold'><ActiveLink to='/addAToy'>Add A Toy</ActiveLink></li>
+                            <li className='font-bold'><ActiveLink to='/myToy'>My Toy</ActiveLink></li>
+                            <li><ActiveLink className='font-bold'><button onClick={handleLogout} className="btn btn-success btn-sm">Logout</button></ActiveLink></li>
                             <a><img style={{ width: '40px' }} src={user1} alt="" /></a>
-                        </> : <li><Link to='/login'>Login</Link></li>
+                        </> : <li><ActiveLink to='/login'>Login</ActiveLink></li>
                     }
                 </ul>
             </div>
